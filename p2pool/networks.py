@@ -17,11 +17,11 @@ nets = dict(
         SPREAD=3, # blocks
         IDENTIFIER='f982abe394923510'.decode('hex'),
         PREFIX='8208c1a53ef649b0'.decode('hex'),
-        P2P_PORT=29944,
+        P2P_PORT=39944,
         MIN_TARGET=0,
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
-        WORKER_PORT=8870,
+        WORKER_PORT=8871,
         BOOTSTRAP_ADDRS='btb.pnwminer.com '.split(' '),
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: v >= 60004,

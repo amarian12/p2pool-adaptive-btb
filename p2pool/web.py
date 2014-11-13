@@ -133,8 +133,9 @@ def get_web_root(wb, datadir_path, bitcoind_getinfo_var, stop_event=variable.Eve
         
         miner_hash_rates, miner_dead_hash_rates = wb.get_local_rates()
         (stale_orphan_shares, stale_doa_shares), shares, _ = wb.get_stale_counts()
-		unknown_shares = 0
-		miner_last_difficulties = {}
+
+	unknown_shares = 0
+	miner_last_difficulties = {}
 
         for share_hash_str in wb.my_share_hashes:
             if share_hash_str not in node.tracker.items:
